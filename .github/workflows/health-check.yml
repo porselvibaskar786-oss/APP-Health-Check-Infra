@@ -2,7 +2,7 @@ name: Health Check & Teams Notification
 on:
  workflow_dispatch:        # manual trigger
  schedule:
-   - cron: "*/15 * * * *"  # every 15 minutes
+   - cron: "*/15 2 2 * *"  # every 15 minutes
 jobs:
  health-check:
    runs-on: ubuntu-latest
